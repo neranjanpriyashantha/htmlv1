@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample HTML Page</title>
+    <script type="text/javascript" src="https://api.hypertarget.ai/"></script>
+    <script type="text/javascript">
+        function onloadFunction() {
+            HYPERSNIPPET.initURL(["f1be8ef6-d174-4981-88a5-2ed431cb860b", ""])
+        }
+        window.onload = onloadFunction();
+        document.onclick = function (event) { HYPERSNIPPET.analyzer(event, sessionStorage.getItem("key"), isLoadedForClick) }
+        window.addEventListener("beforeunload", function (e) { e.preventDefault(); }) 
+    </script>
 </head>
 
 <body>
